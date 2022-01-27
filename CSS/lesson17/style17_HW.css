@@ -1,0 +1,535 @@
+
+/* Базовые настройки страницы*/
+
+/*       ------*- означает обращение ко всем элементам сайта-------        */
+
+* {
+    box-sizing: border-box;
+}
+
+body, p {
+    margin: 0;
+}
+
+
+
+/* Конец базовых настроек страницы*/
+
+/* Универсальные стили */
+
+/*   , - это означает дополнительное обращение к тому или иному элементу 
+       - это перечисление подключений новых class'ов */
+
+.left, 
+.ul_li > li {
+    float: left;
+    /*  > - это стрелочка означает что обращение будет происходить для родительских элементов*/
+    /* Float - это обтекание. То есть выравнивание
+        Выравнивание: куда
+        Выравнивание: в левую сторону  = float: left (либо)
+        Выравнивание: в правую сторону = float right*/
+}
+
+.right {
+    float: right;
+}
+
+.ul_li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+.b-r li {
+    border-right: 1px solid #dadada;
+
+   
+}
+
+/* убрать последние border-right*/
+
+.b-r li:last-child {
+    border-right: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    /*  margin - это внешний отступ
+               - также является выравнивателям 
+    margin: 0 auto; - это ноль отступов со всех сторон и это значит
+                      выровнить по центру */
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.red {
+    color: red;
+}
+.orange {
+    color: orange;
+}
+.blue {
+    color: rgb(68, 68, 226);
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    width: 100%;
+    top: 42px;
+    /* left: 180px; */
+    z-index: 2;
+}
+
+
+
+.hover_menu li:hover .dropdown_menu.home {
+    display: block;
+    margin-top: 40px;
+    width: 150px;
+   
+}
+
+.hover_menu li:hover .dropdown_menu.product {
+    display: block;
+    margin-top: 40px;
+    width: 500px;
+   
+}
+
+.hover_menu li:hover .dropdown_menu.sale {
+    display: block;
+    margin-top: 40px;
+    /* margin-left: 70px; */
+    width: 500px;
+   
+}
+.hover_menu li:hover .dropdown_menu.blogs {
+    display: block;
+    margin-top: 40px;
+    /* margin-left: 160px; */
+    width: 500px;
+   
+}
+.hover_menu li:hover .dropdown_menu.about {
+    display: block;
+    margin-top: 40px;
+    /* margin-left: 280px; */
+    width: 150px;
+   
+}
+
+.hover_menu a {
+    text-decoration: none;
+    color: #4c4b6c;
+}
+
+.dnone {
+    display: none;
+}
+
+.bg_orange {
+    background: #ffcc33;
+}
+
+.bg_green {
+    background: #abcd02;
+}
+
+/* Конец универсальных стилей */
+
+/* Стили для страницы */
+
+/* ------------- Урок 14 ----------- */
+
+.verhnee_menu {
+    background: #f7f7f7;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.verhnee_menu .ul_li i {
+    margin-right: 10px;
+}
+
+/* Position*/
+
+.msg {
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    background: red;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    line-height: 1.5;
+    border-radius: 13px;
+
+}
+
+.icon_msg {
+    position: relative;
+
+}
+
+.center_menu ul {
+    display: flex;
+    /* 
+        display - это блок отображения. Возможные вариции отображения
+        :
+    
+    */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.seryi_krug {
+    background: #f5f4f4;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 20px;
+    color: #4c4b6c;
+}
+
+.center_menu .right > p:first-child {
+    font-weight: bold;
+    color: #4c4b6c;
+}
+ 
+.center_menu .right > p {
+    color: #ababab;
+}
+
+.bottom_menu {
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+
+
+}
+
+.hover_menu li:hover .goluboi_krug1 {
+    background: #7cd0f5;
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.search{
+    border: 1px solid #f7f7f7;
+    display: inline-block;
+    background: white;
+    width: 280px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  [type='search']{
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    
+  }
+  .fas.fa-search{
+    color: #ccc;
+  }
+  
+  input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+  input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+  .orange_krug {
+    background: orange;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 20px;
+  
+}
+.bottom_menu .right > p:first-child {
+    font-weight: bold;
+    color: #4c4b6c;
+    font-size: 18px;
+}
+ 
+.bottom_menu .right > p {
+    color: #ababab;
+    font-size: 14px;
+}
+.black {
+    color: #4c4b6c;
+}
+
+
+.block_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#product {
+    padding: 0 15px;
+}
+.body_block {
+    margin-top: 20px;
+    /* display: inline-block; */
+
+}
+.list_product > .item{
+    float: left;
+}
+
+.block_stars {
+    display: inline-block;
+}
+.block_stars > div {
+    
+    float: left;
+}
+
+
+/* Item style (по уроку product)*/
+.item {
+    display: inline-block;
+    width: 210px;
+   
+   
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.body_item {
+    margin-top: 10px;
+}
+.stars {
+    margin-right: 10px;
+}
+.stars > i {
+    color: orange;
+    font-size: 10px;
+    margin-left: -4px;
+    
+}
+.stars > i:first-child {
+    margin-left: 0;
+}
+
+.reviews {
+    font-size: 13px;
+    line-height: 1.7;
+
+}
+
+.price {
+    display: inline-block;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.price span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4c4b6c;
+}
+
+.price del {
+    font-size: 15px;
+    margin-left: 12px;
+    color: #9e9e9e;
+    line-height: 2;
+}
+
+.btns li {
+    padding: 0px;
+
+}
+.btns .ul_li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btns .seryi_krug {
+    transition: .5s;
+}
+
+.btns li:hover .seryi_krug {
+    background: #7cd0f5;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.img {
+    position: relative;
+    width: 200px;
+}
+.decs_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffffb5;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dcdcdcb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .2s;
+}
+
+.decs {
+    width: 80%;
+    text-align: center;
+}
+
+.ttl {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.item:hover .dnone {
+    display: block;
+    
+}
+
+.item:hover .tooltip2 {
+    display: block;
+} 
+
+.item:hover .block_stars {
+    display: none;
+    
+}
+
+.item .decs_img {
+    opacity: 1;
+}
+
+.list_product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip {
+    position: absolute;
+    right: -7px;
+    top: 7px;
+    color: white;
+    padding: 3px 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.tooltip2 {
+    position: absolute;
+    top: 180px;
+    right: 115px;
+    color: #9e9e9e;
+    font-size: 14px;
+    display: none;
+
+}
+.tooltip:before,
+.tooltip:after{
+  content: '';
+  position: absolute; top: 100%; 
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.tooltip:before{
+  left: 10px;  
+  border-width: 8px 8px 0 0;
+  border-color: #abcd02 transparent;
+}
+.tooltip:after{
+  left: 15px;  
+  border-width: 2px 2px 0 0;
+  border-color: #abcd02 transparent;
+}
+
+.tooltip.orange_tool:before{
+    left: 10px;  
+    border-width: 8px 8px 0 0;
+    border-color: #ffcc33 transparent;
+  }
+.tooltip.orange_tool:after{
+    left: 15px;  
+    border-width: 2px 2px 0 0;
+    border-color: #ffcc33 transparent;
+  }
+.ttl.blue {
+    color: #333366;
+}
+.decs > p {
+    font-style: italic;
+    color: #9e9e9e;
+    font-size: 18px;
+}
+.decs .blue {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.banner {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 147px;
+}
+
+
+
+
+/* .verhnee_menu ul li {
+    float: left
+} */
+
+
+/*Конец стилей для страницы*/
+

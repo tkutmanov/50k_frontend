@@ -1,0 +1,128 @@
+.fon_yellow {
+    background: red;
+}
+li {
+    font-size: 12px;
+}
+.second_class{
+    border: 10px solid black;
+}
+/*Перечисление классов которые находятся в одном сегменте CLASS
+class="fon_yellow second_class sun help" 
+.fon_yellow.second_class.sun.help {
+    
+}  */
+
+/* Данная запись трактуется след.образом:
+    main_menu - основной родительский блок
+    sun       - внутренний элемент который находится внутри блока main_menu
+    
+    По простому:  
+    CSS должен найти в HTML класс SUN который находится внутри Main_menu
+    */
+
+.main_menu .sun {
+    background: pink;
+}
+
+/*Скомбинированное обращение, если нужно указать для нескольких блоков одни и те же
+цвета, то мы можем перечислить классы / id / тег/ атрибуты через запятую*/
+.primer div,
+.primer p,
+#my_id {
+    background: red;
+
+}
+
+/* #my_id{
+    background-color: yellow;
+} */
+
+/*обращение к атрибутам*/
+[data-Meerim="name"] {
+    background: pink;
+}
+
+/* Urok 12*/
+.urok12 {
+
+    background-image: url(https://bipbap.ru/wp-content/uploads/2017/08/16.jpg);
+    /* background-size: cover;  - растянет картинку*/
+    /* background-repeat: no-repeat;  repeat-x повторяет по гориз., repeat-y повторяет по вертикали
+    при этом обязательно нужно указать height*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    /* margin-left: 120px; */
+    /* margin-top: 20px; */
+    /* px  - конкретное заданное число измерения которая не изменяется при уменьшении экрана*/
+    /* rem - относительная единица измерения, которая базируется от HTML*/
+    /* em  - относительная единица измерения, которая базируется от родительского контейнера (блока)*/
+    /* %   - относительная единица измерения, которая базируется от ширины экрана либо блока к которому он задан*/
+
+    /*Правила 4х сторон*/
+    /*
+        Нужно всегда знать что есть 4 стороны
+        Левая сторона
+        Верхняя сторона
+        Правая сторона 
+        Нижняя сторона
+    */
+
+    /*ЦВЕТ
+      Оранжевый  цвет - это внешний отступ = margin
+      Желтый цвет - это границы = border
+      Зеленый цвет - это внутренние отступы = padding
+      Синий цвет - это контент, содержимое документа
+    */
+}
+
+a {
+    display: block;
+
+    /* block        - блочная структура*/
+    /* inline-block - строчная структура*/
+    /* flex         - удобная адаптация ширины, выравнивание тех или иных элементов*/
+}
+
+.urok12_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.urok12_1 {
+    padding: 0;
+
+}
+
+/* Псевдо классы - это событие + обращение к позициям того или иного блока*/
+.urok12_1 ul li:nth-child(3) {
+    background: red;
+}
+
+.urok12_1 ul li:nth-child(2n) {
+    background: yellow;
+}
+
+/* Переходы и анимации */
+
+/*transition - задержка изменения или анимации*/
+.urok12_1 {
+    transition: .5s;
+}
+
+/* hover-наведение на какой-то блок*/
+.urok12_1:hover {
+    background: brown;
+
+}
+/*
+.urok_1 - на что должно быть наведено
+:hover  - наведение
+*/

@@ -1,0 +1,31 @@
+.topContainer {border: 1px solid sandybrown; margin: 5px; padding: 5px;}
+
+.left {border: 1px solid rosybrown; margin: 5px; padding: 5px;}
+
+.right {border: 1px solid rosybrown; margin: 5px; padding: 5px;
+background: blue; color: white;}
+
+.contContainer {border: 1px solid yellowgreen; margin: 5px; padding: 5px;}
+
+.first {border: 1px solid indianred; margin: 5px; padding: 5px;
+background: blue; color: white;}
+
+a {
+    color: white;
+}
+
+.second {border: 1px solid indianred; margin: 5px; padding: 5px;
+background: rgb(136, 231, 231);}
+
+.third {border: 1px solid indianred; margin: 5px; padding: 5px;}
+
+footer {background: black;}
+
+.leftBottomOne {border: 1px solid aquamarine; margin: 5px; padding: 5px; color: white;}
+
+.leftBottomTwo {border: 1px solid aquamarine; margin: 5px; padding: 5px; color: white;}
+
+.rightBottom {border: 1px solid aquamarine; margin: 5px; padding: 5px; color: white;}
+
+
+

@@ -1,0 +1,186 @@
+.container {
+   padding: 10px;
+   height: 20px;
+   display: flex;
+   justify-content: space-around;
+
+   }
+.item {
+    font-size: 18px;
+    color: #828282;
+}
+hr {
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+    margin-inline-start: 75px;
+    margin-inline-end: 75px;
+}
+
+/*Content*/
+
+.underMenu {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+.one {
+    font-size: 47.3392px;
+    color: #070707;
+    font-weight: bold;
+}
+.three {
+    writing-mode: vertical-lr;
+    font-size: 16px;
+   
+}
+
+.photo {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px;
+    height: 400px;
+    background-image: url(./slider.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.contentOne {
+    margin: 70px 10px;
+    height: 506px;
+    background: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.about {
+    font-size: 34px;
+    color: #070707;
+}
+p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.contentTwo {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.cont2 {
+    font-size: 34px;
+    color: #070707;
+    width:100%;
+    text-align: center;
+    
+}
+.cont3 {
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+}
+figcaption {
+    text-align: center;
+}
+.icon {
+    padding-left: 20px;
+}
+
+.contentThree {
+    margin: 70px 10px;
+    height: 506px;
+    background: #F6F6F6;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    
+   
+
+}
+
+span {
+    padding-top: 40px;
+    font-size: 34px;
+    color: #070707;
+    text-align: center;
+    font-weight: bold;
+    width: 1000px;
+}
+.collection,
+.rebook,
+.braun,
+a {
+    width: 1000px;
+    text-align: center;
+    color: #070707;
+    font-size: 18px;
+    font-weight: bold;
+}
+.collection,
+.rebook,
+.braun {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacts {
+    font-size: 34px;
+    color: #070707;
+    font-weight: bold;
+    text-align: center;
+
+}
+.welcome {
+    text-align: center ;
+
+}
+.massage {
+    width: 100%;
+    text-align: center;
+}
+.picture {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pictureOne,
+.pictureTwo,
+.pictureThree,
+.pictureFour {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.social {
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+}

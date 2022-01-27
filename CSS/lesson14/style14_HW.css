@@ -1,0 +1,132 @@
+/* Базовые настройки страницы*/
+
+/*       ------*- означает обращение ко всем элементам сайта-------        */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+/* Конец базовых настроек страницы*/
+
+/* Универсальные стили */
+
+/*   , - это означает дополнительное обращение к тому или иному элементу 
+       - это перечисление подключений новых class'ов */
+
+.left, 
+.ul_li li,
+.second_left {
+    float: left;
+    /* Float - это обтекание. То есть выравнивание
+        Выравнивание: куда
+        Выравнивание: в левую сторону  = float: left (либо)
+        Выравнивание: в правую сторону = float right*/
+}
+
+.right,
+.second_right {
+    float: right;
+}
+
+.second_left,
+.second_right {
+    width: 50%;
+}
+
+.ul_li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sec_left,
+.sec_right {
+    width: 100%;
+}
+
+.ul_li li {
+    padding: 10px 15px;
+}
+
+.sec_left li:last-child {
+    padding-left: 140px;
+    padding-top: 30px;
+}
+
+
+.sec_right li {
+    padding-top: 30px;
+}
+
+.sec_right li:last-child {
+    padding-left: 140px;
+    
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    /*  margin - это внешний отступ
+               - также является выравнивателям 
+    margin: 0 auto; - это ноль отступов со всех сторон и это значит
+                      выровнить по центру */
+}
+
+.second_container {
+    width: 1200px;
+    margin: 0 auto;
+ 
+}
+.text {
+    color: #999696
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: rgb(238, 238, 23);
+    font-weight: bold;
+}
+.blue {
+    color: rgb(158, 227, 236);
+}
+
+/* Конец универсальных стилей */
+
+/* Стили для страницы */
+
+/* ------------- Урок 14 ----------- */
+
+.verhnee_menu {
+    background: #f7f7f7;
+    display: inline-block;
+    width: 100%;
+
+}
+.second_vm {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+ 
+    
+}
+
+
+
+
+
+/* .verhnee_menu ul li {
+    float: left
+} */
+
+
+/*Конец стилей для страницы*/

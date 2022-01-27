@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>lesson17</title>
+        
+        <link rel="stylesheet" href="./style17.css">
+
+
+        <!--
+            Абсолютные пути:
+
+            Чтобы войти в ту или иную папку необходимо использовать "/"
+
+            Чтобы выйти из какой либо папки нужно использовать ".."
+
+            Выйти и зайти будет выглядить "../"
+
+
+
+        -->
+
+    </head>
+
+    <body>
+        <header>
+            <!-- Верхнее меню-->
+            <div class="verhnee_menu">
+                <div class="container">
+                    <!--Левая сторона -->
+                    <div class="left">  
+                        <ul class="ul_li b-r">
+                            <li><i class="fas fa-bullhorn"></i>Sms default welcome!</li>
+                            <li>
+                                <span class="icon_msg">
+                                    <i class="fas fa-gift"></i>
+                                    <span class="msg">
+                                        2
+                                    </span>
+                                </span>
+
+                                <span>Gift vounchers</span>
+                                
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Правая сторона -->
+                    <div class="right">
+                        <ul class="ul_li b-r">
+                            <li><i class="fas fa-language"></i>Language: ENG</li>
+                            <li><i class="far fa-money-bill-alt"></i>Currency: USD</li>
+                            <li>Sign in/ Registr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Центральное меню-->
+            <div class="center_menu">
+                <div class="container">
+                    <ul class="ul_li">
+                        <!--Логотип-->
+                        <li>
+                            <img src="./img/logo.png" alt="логотип">
+                        </li>
+                        <!--Календарь-->
+                        <li>
+                            <div class="left">
+                                <span class="seryi_krug">
+                                    <i class="far fa-calendar-alt"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="right m-l-10">
+                                <p>Mon-Sat 8h00-18h00</p>
+                                <p>Sunday <span class="red">CLOSED</span></p>
+                            </div>
+                        </li>
+                        <!--Bookmark-->
+                        <li>
+                            <div class="left">
+                                <span class="seryi_krug">
+                                    <i class="fas fa-bookmark"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="right m-l-10">
+                                <p>Every Week Sales!</p>
+                                <p>Discount <span class="orange">up to 50% off</span></p>
+                            </div>
+                        </li>
+                        <!--Phone-->
+                        <li>
+                            <div class="left">
+                                <span class="seryi_krug">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="right m-l-10">
+                                <p>Have a Question?</p>
+                                <p>Call: <span class="blue">1900-819898</span></p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+
+            <!--Нижнее меню-->
+            <div class="bottom_menu">
+                <div class="container">
+                    <div class="left">
+                        <ul class="hover_menu ul_li">
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#">Home</a>
+                                </span> 
+                                <div class="dropdown_menu home">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#">Products</a>
+                                </span>
+                                <div class="dropdown_menu product">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#">Sale</a>
+                                </span> 
+                                <div class="dropdown_menu sale">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div> 
+                            </li>
+
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#" class="blogs">Blogs</a>
+                                </span> 
+                                <div class="dropdown_menu blogs">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div> 
+                            </li>
+                            <li>
+                                <span class="goluboi_krug1"> 
+                                    <a href="" class="about">About Us</a>
+                                </span>
+                                <div class="dropdown_menu about">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="ul_li">
+                            <li>
+                                <div class="search">
+                                    <input type="search" placeholder="Search">
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class="orange_krug">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span>
+                                   
+                                </div>
+                                <div class="right m-l-10">
+                                    <p>My Cart.</p>
+                                    <p><span class="black">01</span>/$150.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!--Тело сайта-->
+        <main>
+            <div class="container">
+                <section id="product">
+
+                    <div class="block_title">
+                        <div class="left">
+                            <h1>Featured</h1>
+                        </div>
+                        <div class="right">
+                            <span>View All Products <i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="body_block">
+                        <div class="list_product">
+                            <div class="item">
+                                <div class="img">
+                                    <!--Шильдик-->
+                                    <div class="tooltip bg_orange">
+                                        <span>New</span>
+
+                                    </div>
+                                    <img src="./img/img1.jpg" alt="sweatshirt">
+                                    
+                                    <div class="decs_img">
+                                        
+                                        <div class="decs">
+                                            <p class="ttl">Заголовок</p>
+                                            <p>Описание описание описание вот <span class="orange">это</span></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$36.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./img/img1.jpg" alt="sweatshirt">
+
+                                    <div class="decs_img">
+                                        <div class="decs">
+                                            <p class="ttl">Заголовок</p>
+                                            <p>Описание описание описание вот <span class="orange">это</span></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$36.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./img/img1.jpg" alt="sweatshirt">
+
+                                    <div class="decs_img">
+                                        <div class="decs">
+                                            <p class="ttl">Заголовок</p>
+                                            <p>Описание описание описание вот <span class="orange">это</span></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$36.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./img/img1.jpg" alt="sweatshirt">
+
+                                    <div class="decs_img">
+                                        <div class="decs">
+                                            <p class="ttl">Заголовок</p>
+                                            <p>Описание описание описание вот <span class="orange">это</span></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$36.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./img/img1.jpg" alt="sweatshirt">
+
+                                    <div class="decs_img">
+                                        <div class="decs">
+                                            <p class="ttl">Заголовок</p>
+                                            <p>Описание описание описание вот <span class="orange">это</span></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span>$36.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section id="banner"></section>
+            </div> 
+            
+        </main> 
+        
+        <footer>
+            <span>подвал сайт</span> 
+        </footer>
+
+        <script src="https://kit.fontawesome.com/df5a83bec8.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>

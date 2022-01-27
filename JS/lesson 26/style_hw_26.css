@@ -1,0 +1,29 @@
+.container {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    user-select: none;
+    border-radius: 5px;
+    background: bisque;
+}
+
+.input {
+    width: 100%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.item {
+    width: 38px;
+    height: 38px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+    background: aliceblue;
+}
+
+
+

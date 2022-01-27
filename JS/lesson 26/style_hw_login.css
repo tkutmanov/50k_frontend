@@ -1,0 +1,11 @@
+form {
+    display: inline-block;
+    width: 250px;
+}
+input {
+    margin: 5px;
+}
+
+label.login {
+    padding-right: 23px;
+}

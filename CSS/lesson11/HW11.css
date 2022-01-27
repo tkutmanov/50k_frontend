@@ -1,0 +1,64 @@
+.topContainer {border: 1px solid sandybrown; margin: 5px; padding: 5px;}
+
+.left {border: 1px solid rosybrown; margin: 5px; padding: 5px; background-color: gold;}
+
+.right {border: 1px solid rosybrown; margin: 5px; padding: 5px;
+background: blue; color: white;}
+
+.contContainer {border: 1px solid yellowgreen; margin: 5px; padding: 5px;}
+
+.first {border: 1px solid indianred; margin: 5px; padding: 5px;
+background: blue; color: white;}
+
+a {
+    color: white;
+}
+
+.second {border: 1px solid indianred; margin: 5px; padding: 5px;
+background: silver}
+
+.third {border: 1px solid indianred; margin: 5px; padding: 5px;}
+
+footer {background: black;}
+
+.leftBottomOne {border: 1px solid aquamarine; margin: 5px; padding: 5px; color: white;}
+
+.leftBottomTwo {border: 1px solid aquamarine; margin: 5px; padding: 5px; color: white;}
+
+.rightBottom {border: 1px solid aquamarine; margin: 5px; padding: 5px; color: white;}
+
+/*HW 11*/
+
+#topMenu,
+#mainContent {
+    background: peru;
+}
+
+.left span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.right .about,
+.right .equipment,
+.right .spareParts,
+.right .attachment,
+.right .leasing,
+.right .contacts {
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+
+.first .excavator,
+.first .loader,
+.first .addEquipment {
+    font-size: 30px;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.second p {
+    font-size: 20px;
+
+}

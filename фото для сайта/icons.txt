@@ -1,0 +1,27 @@
+/*top bar*/ 
+
+fa fa-gift 
+fa fa-language
+fa fa-money
+
+/*middle bar menu*/
+
+fa fa-calendar
+fa fa-bookmark
+fa fa-bookmark
+
+
+/*menu*/
+fa fa-shopping-bag
+
+
+/*footer*/
+
+fa fa-phone
+fa fa-envelope-o
+fa fa-clock-o
+
+fa fa-twitter
+fa fa-skype
+fa fa-vine
+fa fa-facebook

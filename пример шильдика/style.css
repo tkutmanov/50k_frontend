@@ -1,0 +1,26 @@
+.b-tooltip{
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    border: 5px solid #666;
+    border-radius: 10px;
+  }
+  .b-tooltip:before,
+  .b-tooltip:after{
+    content: '';
+    position: absolute; top: 100%; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .b-tooltip:before{
+    left: 10px;  
+    border-width: 30px 30px 0 0;
+    border-color: #666 transparent transparent transparent;
+  }
+  .b-tooltip:after{
+    left: 15px;  
+    border-width: 18px 18px 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
