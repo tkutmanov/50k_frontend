@@ -34,7 +34,7 @@ body, p {
     float: right;
 }
 
-.ul_li {
+.ul_li, ul {
     list-style: none;
     display: inline-block;
     padding: 0;
@@ -60,7 +60,7 @@ body, p {
 .container {
     width: 1200px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
 
     /*  margin - это внешний отступ
                - также является выравнивателям 
@@ -516,16 +516,188 @@ body, p {
     font-size: 20px;
 }
 
-.banner {
-    margin-top: 40px;
+/* Banner*/
+#banner {
+    
+    height:100%;
+    
+}
+.body_banner {
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    min-height: 147px;
+}
+.body_banner img{
+    padding-right: 10px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.one_col,
+.four_col {
+    width: 404px;
+    height: 400px;
+    
+}
+
+.two_col,
+.three_col {
+    width: 185px;
+    height: 255px;
+    
+}
+
+.col_list {
+    margin-top: 40px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_col,
+.three_col,
+.four_col {
+    padding-top: 30px;
+}
+
+.contact_info a {
+    text-decoration: none;
+    color: #adadad
+}
+
+.contact_info {
+    padding-top: 10px;
+}
+
+.contact_info li {
+    color: #adadad
+
+}
+
+.f_li_hover li {
+    padding: 5px 0;
+    transition: .5s;
+    
+}
+
+.f_li_hover a {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.f_li_hover li:hover {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.f_ttl:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #d2d2d2;
+    position: absolute;
+    bottom: -7px;
+}
+
+.one_col {
+    padding-right: 50px;
+    color: #adadad;
+}
+.one_col p {
+    padding-top: 30px;
+}
+
+.isp {
+    padding-right: 5px;
+}
+
+.f_ttl {
+    position: relative;
+}
+.pictures li {
+    padding: 30px 0 0 13px;
+}
+.f_li_hover {
+    padding-top: 20px;
 }
 
 
+/*  Кнопка contact me  */
+.btn_call {
+    text-align: center;
+    margin-top: 20px;
+}
 
 
+.btn_call a {
+    background: #7cd0f5;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.btn_call a:hover {
+    background: #2f96c2;
+
+}
+
+/*  --------Социальные сети------------- */
+
+.polosa {
+    
+    padding: 10px 15px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.lr {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.social1 li:hover {
+    color: red;
+   
+}
+.social2 a {
+    text-decoration: none;
+    color: #adadad;
+  
+}
+.social1 li{
+    padding: 5px 10px 5px 0;
+    font-size: 13px;
+}
+.social2 li {
+    padding: 5px 0 5px 10px;
+    font-size: 13px; 
+}
+
+/* ---------Платежи---------  */
+
+.payment {
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #adadad;
+}
+ .copyright a{
+     text-decoration: none;
+     color: #4c4b6c;
+     font-weight: bold;
+     
+ }
 /* .verhnee_menu ul li {
     float: left
 } */
@@ -533,3 +705,52 @@ body, p {
 
 /*Конец стилей для страницы*/
 
+
+
+
+/* Мобильная адаптация*/
+/*Урок 19*/
+
+/* Адаптация бывает 2х типов: 
+
+1) резиновый шаблон - это когда весь сайт задан в % соотношении. 
+То есть когда мы будем уменьшать размер браузера все данные будут растягиваться либо сжиматься
+
+2) фиксированный - это когда мы адаптируем наш сайт под стандарты того или иного устройства 
+(медиа запросы) */
+
+
+/* Пример размера Iphone 6/7/8 Plus*/
+/* @media (max-width:414px) {
+
+} */
+    /* @media это параметр, который нужен для того чтобы обратиться к размеру устройства пользователя*/
+    /* max-width -это параметр, который нужен для того чтобы указать минимальную ширину блока и 
+    указать для него и для экранов ниже размером стили */
+
+
+
+
+/* Данная запись говорит о том, что я могу получить размер экрана 414px и использовал стили 
+которые в нем будут заключены*/
+
+/* -------Правила адаптации ------
+
+1)Адаптация начинается с большего размера к меньшому */
+
+
+
+/*_____________Старт Адаптации_____________*/
+
+@media (min-width: 1024px) {
+    /* max-width: 1024px от этого размера и ниже*/
+    /* min-width: 1024px от этого размера и выше*/
+    .container {
+        width: auto;
+    }
+    .list_product {
+        flex-wrap: wrap;
+    }
+}
+
+/* Конец мобильной адаптации*/
