@@ -53,8 +53,14 @@ console.log(ttl[0].innerText);
 let img2 = document.getElementsByClassName("img2");
 console.log(img2[0]);
 
+
 // 4) Получить цену
 
-let price = document.getElementsByClassName("price");
-console.log(price[0].children);
+let span_price = document.getElementsByClassName("span_price");
 
+console.log(span_price[0].innerText);
+
+
+let del_price = document.getElementsByClassName("del_price");
+
+console.log(del_price[0].innerText);
