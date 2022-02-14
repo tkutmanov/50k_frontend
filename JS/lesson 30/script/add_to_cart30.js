@@ -166,3 +166,49 @@ var myFunction = function() {
 for (var i=0; i < elements.length; i++) {
     elements[i].addEventListener("click", myFunction, false);
 }
+
+
+// Объекты
+
+const arr = {
+    name: "Ismar",
+    age: 26,
+    param: {
+        color: "white",
+        nat: "dungan"
+    }
+};
+
+// console.log (arr["name"]); или можно
+
+// console.log (arr.name);
+
+// delete arr.name;
+
+// console.log (arr.name);
+
+//отображение ключей
+// for (let key in arr) {
+//     console.log(key);
+// }
+
+//отображение значений
+// for (let key in arr) {
+//     console.log(arr[key]);
+// }
+
+//распаковка второго массива param
+
+for (let key in arr) {
+
+    if(typeof(arr[key]) === "object") {
+        for (let key2 in arr[key]) {
+            console.log(arr[key][key2]);
+
+        }
+
+    } else {
+        console.log(arr[key]);
+    }
+
+}
