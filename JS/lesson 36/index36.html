@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>lesson36</title>
+
+        <link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style36.css">
+
+
+        <!--
+            Абсолютные пути:
+
+            Чтобы войти в ту или иную папку необходимо использовать "/"
+
+            Чтобы выйти из какой либо папки нужно использовать ".."
+
+            Выйти и зайти будет выглядить "../"
+
+
+
+        -->
+
+    </head>
+
+    <body>
+        <header>
+            <!-- Верхнее меню-->
+            <div class="verhnee_menu">
+                <div class="container">
+                    <!--Левая сторона -->
+                    <div class="left">  
+                        <ul class="ul_li b-r">
+                            <li><i class="fas fa-bullhorn"></i>Sms default welcome!</li>
+                            <li>
+                                <span class="icon_msg">
+                                    <i class="fas fa-gift"></i>
+                                    <span class="msg">
+                                        2
+                                    </span>
+                                </span>
+
+                                <span>Gift vounchers</span>
+                                
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Правая сторона -->
+                    <div class="right">
+                        <ul class="ul_li b-r">
+                            <li><i class="fas fa-language"></i>Language: ENG</li>
+                            <li><i class="far fa-money-bill-alt"></i>Currency: USD</li>
+                            <li>Sign in/ Registr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Центральное меню-->
+            <div class="center_menu">
+                <div class="container">
+                    <ul class="ul_li">
+                        <!--Логотип-->
+                        <li>
+                            <img src="./img/logo.png" alt="логотип">
+                        </li>
+                        <!--Календарь-->
+                        <li>
+                            <div class="left">
+                                <span class="seryi_krug">
+                                    <i class="far fa-calendar-alt"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="right m-l-10">
+                                <p>Mon-Sat 8h00-18h00</p>
+                                <p>Sunday <span class="red">CLOSED</span></p>
+                            </div>
+                        </li>
+                        <!--Bookmark-->
+                        <li>
+                            <div class="left">
+                                <span class="seryi_krug">
+                                    <i class="fas fa-bookmark"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="right m-l-10">
+                                <p>Every Week Sales!</p>
+                                <p>Discount <span class="orange">up to 50% off</span></p>
+                            </div>
+                        </li>
+                        <!--Phone-->
+                        <li>
+                            <div class="left">
+                                <span class="seryi_krug">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="right m-l-10">
+                                <p>Have a Question?</p>
+                                <p>Call: <span class="blue">1900-819898</span></p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+
+            <!--Нижнее меню-->
+            <div class="bottom_menu">
+                <div class="container">
+                    <div class="left">
+                        <ul class="hover_menu ul_li">
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#">Home</a>
+                                </span> 
+                                <div class="dropdown_menu home">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#">Products</a>
+                                </span>
+                                <div class="dropdown_menu product">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#">Sale</a>
+                                </span> 
+                                <div class="dropdown_menu sale">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div> 
+                            </li>
+
+                            <li>
+                                <span class="goluboi_krug1">
+                                    <a href="#" class="blogs">Blogs</a>
+                                </span> 
+                                <div class="dropdown_menu blogs">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div> 
+                            </li>
+                            <li>
+                                <span class="goluboi_krug1"> 
+                                    <a href="" class="about">About Us</a>
+                                </span>
+                                <div class="dropdown_menu about">
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="right">
+                        <ul class="hover_menu ul_li">
+                            <li>
+                                <div class="search">
+                                    <input type="search" placeholder="Search">
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div> 
+                            </li>
+                            <li >
+                                <div class="left">
+                                    <span class="orange_krug">
+                                    <a href="#" class="bag"><i class="fas fa-briefcase"></i></a>
+                                    </span>
+                                    <div class="dropdown_menu bag">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+
+                                <div class="right m-l-10">
+                                    <p>My Cart.</p>
+                                    <p><span class="black">01</span>/$150.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        
+        <main>
+            <div class="container">
+                <section id="product">
+                    <!--block_title-->
+                    <div class="block_title">
+                        <div class="left">
+                            <h1>Featured</h1>
+                        </div>
+                        <div class="right">
+                            <span>View All Products <i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                    <!--body_block-->
+                    <div class="body_block">
+                        <div class="list_product">
+                            <div class="item">
+                                <div class="img">
+                                   
+                                    <!--Шильдик 1-->
+                                    <div class="tooltip bg_green">
+                                        <span>New</span>
+                                    </div>
+                                    <!--Шильдик 2-->
+                                    <div class="tooltip2">
+                                        <span><i class="fas fa-arrows-alt"></i></span>
+                                        <span>Quick view</span>
+                                    </div>
+
+                                    <img src="./img/img1.jpg" alt="sweatshirt" class="img2">
+
+                                </div>
+
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt1</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="span_price">$36.00</span>
+                                        <del class="del_price">$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li class="add_cart">
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <!--Шильдик-->
+                                    <div class="tooltip bg_orange orange_tool">
+                                        <span>-25%</span>
+
+                                    </div>
+                                    <!--Шильдик 2-->
+                                    <div class="tooltip2">
+                                        <span><i class="fas fa-arrows-alt"></i></span>
+                                        <span>Quick view</span>
+                                    </div>
+
+                                    <img src="./img/img2.jpg" alt="sweatshirt" class="img2">
+                                    
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt2</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="span_price">$26.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li class="add_cart">
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    
+                                    <img src="./img/img3.jpg" alt="sweatshirt" class="img2">
+
+                                    <div class="decs_img">
+                                        <div class="decs">
+                                            <p class="ttl blue">out of stock!</p>
+                                            <p><span class="orange">see</span>  similar product</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt3</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="span_price">$16.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li class="add_cart">
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <!--Шильдик 2-->
+                                    <div class="tooltip2">
+                                        <span><i class="fas fa-arrows-alt"></i></span>
+                                        <span>Quick view</span>
+                                    </div>
+                                    <img src="./img/img4.jpg" alt="sweatshirt" class="img2">
+
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt4</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="span_price">$6.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li class="add_cart">
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <!--Шильдик-->
+                                    <div class="tooltip bg_green">
+                                        <span>New</span>
+
+                                    </div>
+                                    <!--Шильдик 2-->
+                                    <div class="tooltip2">
+                                        <span><i class="fas fa-arrows-alt"></i></span>
+                                        <span>Quick view</span>
+                                    </div>
+                                    <img src="./img/img1.jpg" alt="sweatshirt" class="img2">
+                                    
+                                </div>
+                                <div class="body_item">
+                                    <p class="ttl">Animal Print Sweatshirt5</p>
+                                    <div class="block_stars">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="reviews">
+                                            <span>6 Review(s)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="span_price">$8.00</span>
+                                        <del>$42.00</del>
+                                    </div>
+                                    <div class="btns dnone">
+                                        <ul class="ul_li">
+                                            <li class="add_cart">
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-balance-scale"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="seryi_krug">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section id="banner" >
+                    <div class="body_banner">
+                        <div><img src="./img/banner.png" alt="banner"></div>
+                        <div><img src="./img/banner2.png" alt="banner"></div>
+                    </div>
+                </section>
+            </div> 
+            
+        </main> 
+        
+        <footer>
+            <div class="container">
+                <div class="col_list">
+                    <div class="one_col">
+                        <span><img src="./img/logo.png" alt="лого"></span>
+                        <p>Miukid is a premium eCommerce theme with advanced admin module.</p>
+                        <ul class="contact_info">
+                            <li>
+                                <span class="isp"><i class="fas fa-phone-alt"></i></span>
+                                <span>Telephone:</span> 
+                                <a href="tel:+84988992085">+84 988 992 085</a>
+                                
+                            </li>
+                            <li>
+                                <span class="isp"><i class="far fa-envelope"></i></span>
+                                <span>Email:</span> 
+                                <a href="mailto:lamhvdesigner@gmail.com">lamhvdesigner@gmail.com</a>
+                                
+                            </li>
+                            <li>
+                                <span class="isp"><i class="far fa-clock"></i></span>
+                                <span>8:00 - 19:00, Monday - Saturday, Sunday - closed</span>
+                            </li>
+                        <p class="btn_call">
+                            <a href="tel:+84988992085">Contact me</a>
+                        </p>
+                    </div>
+    
+                    <div class="two_col">
+                        
+                        <h3 class="f_ttl">Information</h3>
+                        <ul class="f_li_hover">
+                            <li><a href="#"> About Us</a></li>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Privacy Notice</a></li>
+                            <li><a href="#">Conditions of Use</a></li>
+                            <li><a href="#">RSS</a></li>
+                        </ul>
+                        
+                    </div>
+    
+                    <div class="three_col">
+                        
+                        <h3 class="f_ttl">Service</h3>
+                        <ul class="f_li_hover">
+                            <li><a href="#"> Online support</a></li>
+                            <li><a href="#">Help & FAQs</a></li>
+                            <li><a href="#">Call Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Custom Link</a></li>
+                        </ul>
+                    
+                    </div>
+    
+                    <div class="four_col">
+                       
+                        <h3 class="f_ttl">Instagram</h3>
+                        <ul class="ul_li pictures">
+                            <li>
+                                <img src="./img/img_f_1.jpg" alt="shoes">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_2.jpg" alt="girl">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_3.jpg" alt="kombinizon">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_4.jpg" alt="shirt">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_5.jpg" alt="shirt">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_6.jpg" alt="shirt">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_7.jpg" alt="shirt">
+                            </li>
+                            <li>
+                                <img src="./img/img_f_8.jpg" alt="girl">
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <!--Нижнее меню второй блок-->
+                <div class="polosa">
+                    <div class="lr">
+                        <div class="left"> 
+                            <ul class="ul_li social1">
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-skype"></i></li>
+                                <li><i class="fab fa-vine"></i></li>
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="ul_li social2">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">Site map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!--Нижнее меню третий блок-->
+                <div class="payment">
+                    <div class="left">
+                        <ul class="ul_li copyright">
+                            <li>Copyright © 2018 by</li>
+                            <li><a href="#">EngoTheme.</a></li>
+                            <li>All Rights Reserved</li>
+                        </ul>
+                            
+                    </div>
+                    <div class="right">
+                        <ul class="ul_li">
+                            <li><img src="./img/icon1.png" alt="PayPal"></li>
+                            <li><img src="./img/icon2.png" alt="VISA"></li>
+                            <li><img src="./img/icon3.png" alt="Cirrus"></li>
+                            <li><img src="./img/icon4.png" alt="DISCOVER"></li>
+                            <li><img src="./img/icon5.png" alt="ebay"></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            
+  
+        </footer>
+
+        <script src="https://kit.fontawesome.com/6d1546dc30.js" crossorigin="anonymous"></script>
+        <script src="styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+     
+        <script src="./script/project_add_to_cart36.js"></script>
+        <script src="./script/hw_lesson36.js"></script>
+       
+
+    </body>
+
+</html>
