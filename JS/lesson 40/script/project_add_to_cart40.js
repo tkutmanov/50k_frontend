@@ -45,12 +45,12 @@ create_li.classList.add("bag_item");
 
 
 create_li.innerHTML =
-        '<div class="bag_img left">\
+        '<div class="bag_img">\
             <a href="#">\
                 <img src="'+image[0].src+'" alt="">\
             </a>\
         </div>\
-        <div class="bag_info right">\
+        <div class="bag_info">\
             <p class="info_title"><a href="#">'+title[0].innerText+'</a></p>\
             <div class="info_price">\
                 <span class="currency">$</span>\
